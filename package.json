@@ -1,0 +1,75 @@
+{
+	"name": "hwt",
+	"version": "0.0.1",
+	"description": "Generate terminal commands from your terminal using natural language",
+	"license": "MIT",
+	"repository": "dspaccapeli/hwt-cli",
+	"author": {
+		"name": "Daniele Spacccapeli",
+		"email": "dspaccapeli@users.noreply.github.com",
+		"url": "https://spaccapeli.com"
+	},
+	"bin": "cli.js",
+	"engines": {
+		"node": ">=10"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"cli.js",
+		"exec.js",
+		"help.js",
+		"index.js",
+		"init.js",
+		"ui.js",
+		"update.js"
+	],
+	"keywords": [
+		"cli-app",
+		"cli",
+		"terminal",
+		"commands",
+		"help",
+		"tui",
+		"how-to",
+		"natural-language",
+		"hwt",
+		"find",
+		"codex",
+		"gpt",
+		"neural",
+		"networks"
+	],
+	"dependencies": {
+		"@esm2cjs/execa": "^6.1.1-cjs.1",
+		"clipboardy": "^2.2.0",
+		"conf": "^7.1.1",
+		"import-jsx": "^4.0.0",
+		"ink": "^3.0.3",
+		"ink-gradient": "^2.0.0",
+		"ink-spinner": "^4.0.3",
+		"ink-text-input": "^4.0.0",
+		"mem": "^6.0.1",
+		"meow": "^7.0.1",
+		"node-fetch": "^2.6.9",
+		"openai": "^3.2.1",
+		"react": "^16.5.2"
+	},
+	"devDependencies": {
+		"ava": "^1.4.0",
+		"eslint-config-xo-react": "^0.23.0",
+		"eslint-plugin-react": "^7.20.5",
+		"eslint-plugin-react-hooks": "^4.0.8",
+		"xo": "^0.32.1"
+	},
+	"xo": {
+		"extends": [
+			"xo-react"
+		],
+		"rules": {
+			"react/prop-types": "off",
+			"react/state-in-constructor": "off"
+		}
+	}
+}
