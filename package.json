@@ -1,6 +1,6 @@
 {
   "name": "@spcpl/hwt",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Generate terminal commands from your terminal using natural language",
   "license": "MIT",
   "repository": {
