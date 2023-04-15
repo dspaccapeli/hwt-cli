@@ -16,7 +16,7 @@
 
 Finding hard to remember all these pesky commands and flags for your CLI applications? Use hwt to use them with natural language.
 
-Example usage, in your terminal:
+### Example usage, in your terminal:
 
 ```
 $ hwt print the path of the current directory
@@ -39,11 +39,14 @@ It's an open-source alternative to [Github Copilot X CLI](https://githubnext.com
 
 **You need an OpenAI API key to get started.**
 
-Install:
+### Install:
 
 ```
 // To use hwt, you need to have Node and NPM installed
+
 $ npm install -g @spcpl/hwt
+
 // After that, you need to initialize it with your OpenAI API key.
+
 $ hwt --init
 ```
