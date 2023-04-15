@@ -13,7 +13,7 @@ const Init = ({config}) => {
 
 	let questions = [
 		{
-			question: 'Enter your API key from OpenAI',
+			question: 'Enter your API key from OpenAI. Press "Enter" to continue in case you already have.',
 			key: 'apiKey',
 		},
 		{
@@ -39,7 +39,9 @@ const Init = ({config}) => {
 		}
 
 		if (questionIndex !== 0 && questions[questionIndex-1].key === 'apiKey') {
-			config.set('apiKey', temp);
+			if (temp !== '') {
+				config.set('apiKey', temp);
+			}
 			setTemp('y');
 		}
 

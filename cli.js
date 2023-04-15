@@ -125,10 +125,10 @@ const initUI = async (config) => {
 	process.exit();
 }
 
-const execUI = async (apiKey, modelName, prompt, language, autoCopy, fastExec, directOut) => {
+const execUI = async (apiKey, modelName, prompt, autoCopy, fastExec, directOut) => {
 	let app;
 	//change to init
-	app = render(React.createElement(exec, {apiKey, modelName, prompt, language, autoCopy, fastExec, directOut }));
+	app = render(React.createElement(exec, {apiKey, modelName, prompt, autoCopy, fastExec, directOut }));
 	await app.waitUntilExit();
 	process.exit();
 }
@@ -145,6 +145,8 @@ const config = new Conf({
 let apiKey = config.get('apiKey') ? config.get('apiKey') : false;
 let autoCopy = config.get('autoCopy') ? config.get('autoCopy') : false;
 let modelName = config.get('modelName') ? config.get('modelName') : false;
+
+console.log('autoCopy: ' + autoCopy);
 
 // get the flags for fast execution and direct output
 let fastExec = flagStart.some((flag) => flag.includes('-x') || flag.includes('--exec'));
