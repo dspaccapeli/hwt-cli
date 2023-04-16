@@ -13,7 +13,7 @@ const Init = ({config}) => {
 
 	let questions = [
 		{
-			question: 'Enter your API key from OpenAI. Press "Enter" to continue in case you already have.',
+			question: 'Enter your API key from OpenAI. Press "Enter" to continue in case you already have',
 			key: 'apiKey',
 		},
 		{
