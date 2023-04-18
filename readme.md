@@ -35,7 +35,7 @@ $ hwt list all the running docker containers
 $ hwt update python
 ```
 
-It's an open-source alternative to [Github Copilot X CLI](https://githubnext.com/projects/copilot-cli). 
+It's an open-source alternative to [Github Copilot CLI](https://githubnext.com/projects/copilot-cli). 
 
 **You need an OpenAI API key to get started.**
 
